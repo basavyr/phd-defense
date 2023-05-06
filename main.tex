@@ -3,33 +3,62 @@
 \usepackage{graphicx} % Required for inserting images
 
 \usepackage{beamerthemesplit}
+
+\usepackage{fontawesome}
+
+
 \usetheme{Copenhagen}
+\useoutertheme{infolines}
 
 \title[Systematic Wobbling Description]{A Systematic Description of the Wobbling Motion in Odd-Mass Nuclei Within a Semi-Classical Formalism}
-\author{Robert Poenaru}
-\date{\today}
 
-% \author[shortname]{Robert Poenaru \inst{1} \inst{2}}
-% \author[Robert Poenaru]{\texorpdfstring{Robert Poenaru\newline\url{robert.poenaru@drd.unibuc.ro}}{Robert Poenaru}}
+
+% old author setup
+% \author[Robert Poenaru]{%
+%     \parbox[t]{0.5\textwidth}{%
+%         \textbf{Author} \\
+%         Robert Poenaru\inst{1} \inst{2}
+%     }%
+%     \parbox[t]{0.5\textwidth}{%
+%         \textbf{Scientific Coordinator} \\
+%         Prof. Em. Dr. A. A. Raduta\inst{2}
+%     }%
+% }
+% \institute[DFT]{
+% \inst{1} Doctoral School of Physics, UB \and %
+% \inst{2} Department of Theoretical Physics, IFIN-HH
+% }
+
+% manual override for a side-by-side author view
 \author[Robert Poenaru]{%
-    \parbox[t]{0.5\textwidth}{%
-        \textbf{Author} \\
-        Robert Poenaru\inst{1} \inst{2}
+    \parbox[t]{0.45\textwidth}{%
+		\centering
+		\textbf{PhD Candidate} \\
+		Robert Poenaru\texorpdfstring{$^{1,2}$}{(1,2)}
     }%
-    \parbox[t]{0.5\textwidth}{%
-        \textbf{Scientific Coordinator} \\
-        Prof. Em. Dr. A. A. Raduta\inst{2}
+    \parbox[t]{0.45\textwidth}{%
+		\centering
+        \textbf{Scientific Supervisor} \\
+        Prof. Em. Dr. A. A. Raduta\texorpdfstring{$^{2}$}{(2)}
     }%
 }
+\institute[IFIN-HH]{\texorpdfstring{$^{1}$}{1}Doctoral School of Physics, UB \\ \texorpdfstring{$^{2}$}{2}Department of Theoretical Physics, IFIN-HH}
 
-\institute[DFT]{
-\inst{1} Doctoral School of Physics, UB \and %
-\inst{2} Department of Theoretical Physics, IFIN-HH
-}
-    
+\date[\today]{\textit{A presentation for the degree of Doctor of Philosophy}\vspace{0.2cm} \\ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% start of the document %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
-\maketitle
+% trick to show a the first slide without the header
+{\setbeamertemplate{headline}{}
+\begin{frame}
+	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
+\end{frame}}
 
 \begin{frame}
     \frametitle{TOC}
@@ -59,6 +88,11 @@
     Text
 \end{frame}
 
-
+\begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
+	\begin{center}
+		\bigskip\bigskip % Vertical whitespace
+		{\Huge Thank you for your attention \faHeart}
+	\end{center}
+\end{frame}
 
 \end{document}
