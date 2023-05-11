@@ -6,7 +6,14 @@
 
 \usepackage{xmpmulti}
 \usepackage{animate}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{graphicx}
 \usepackage{fontawesome}
+
+% \usepackage{svg}
+\usepackage[inkscapeformat=png]{svg}
 
 
 \usetheme{Copenhagen}
@@ -71,16 +78,17 @@
 
 \begin{frame}
     \frametitle{Aim}
-    \begin{block}{\faClipboard Research Objectives}
+    \begin{block}{\faClipboard\ Research Objectives}
         \begin{itemize}
-            \item Extend the current interpretation of the \textbf{nuclear triaxiality} in the context of its unique fingerprint: \textbf{Nuclear Wobbling Motion}. {\footnotesize\emph{from a theoretical standpoint}}
+            \item Extend the current interpretation of the \textbf{nuclear triaxiality} in the context of its unique fingerprint: \textbf{Wobbling Motion} % {\footnotesize\emph{from a theoretical standpoint}}
+            \item Adopt a framework that is as close as possible to \textbf{classical physics}.
             \item Provide new formalisms for the phenomena related to \textbf{nuclear deformation}.
         \end{itemize}
     \end{block}
-    \begin{exampleblock}{\faClipboard Objectives exclusive to the thesis}
+    \begin{exampleblock}{\faClipboard\ Objectives exclusive to the thesis}
         \begin{itemize}
-            \item Give the reader a sufficiently rich theoretical background and context towards a better understanding of the underlying concepts.
-            \item \faGithub create a completely \emph{open-source} project.
+            \item Give the reader enough context towards a better understanding of the underlying concepts, methods, and results.
+            \item \faGithub\ create a completely \emph{open-source} project.
         \end{itemize}
     \end{exampleblock}
 \end{frame}
@@ -97,13 +105,32 @@
     \vspace{-0.2cm}
     \begin{figure}
         \centering
-        \includegraphics[scale=0.35]{figures/exp_vs_theory.png}
+        \includegraphics[scale=0.7]{figures/exp_vs_theory.png}
     \end{figure}
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{Triaxiality - Nuclear facilities}
+	\frametitle{\faSearch Probing triaxiality in nuclei}
+    Triaxial nuclei can be observed/obtained in several experiments:
+    \begin{itemize}
+        \item Nuclear fission: $A\ \rightarrow\ B\ +\ C$
+        \item Nuclear fusion: $X\ +\ Y\ \rightarrow\ Z$
+        \item \textbf{Fusion-evaporation reactions}: {\color{red}Long-lived} + {\color{red}enhanced deformation}
+        \vspace{-0.3cm}
+        \begin{align}
+            {\color{blue}Beam(N_1,E)}\ +\ {\color{magenta}Target(N_2)}\longrightarrow N_3^*\rightarrow\dots\rightarrow {\color{purple}triaxial(N_4)} \nonumber
+        \end{align}
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.6]{figures/fusion-evaporation.png}
+        % \includesvg{figures/fusion-evaporation.svg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{\faSearch Nuclear facilities}
 	\begin{columns}
 		\column{0.4\textwidth}
 		\begin{figure}
@@ -129,10 +156,32 @@
 % \end{frame}
 
 \subsection{Nuclear Shapes}
+
+
 \begin{frame}
-    \frametitle{Text}
-    Text
+	\frametitle{Nuclear Shapes (in the context of WM)}
+	\begin{exampleblock}{Nuclear Radius}
+		The \textbf{shape} of the nucleus is most generally described in terms of the \emph{nuclear radius}:
+		\begin{align}
+			R(\theta,\varphi;t)=R_0\left(1+\sum_{\lambda=0}^{^\infty}\sum_{\mu=-\lambda}^\lambda\alpha_{\lambda\mu}(t)Y_\lambda^\mu(\theta,\varphi)\right)
+		\end{align}
+	\end{exampleblock}
+	% \begin{itemize}
+	% 	\item The $\alpha_{\lambda\mu}$ are collective coordinates $\Longrightarrow$ \emph{vibrations of the nucleus}.
+	% 	\item $Y_\lambda^\mu$ are the spherical harmonics.
+	% \end{itemize}
+	\begin{block}{Quadrupole deformations}
+
+		\begin{itemize}
+			\item {\color{red}For us:} Most relevant modes are the \textbf{quadrupole vibrations} $\lambda=2$ $\Longrightarrow$ \emph{Play a crucial role in the rotational spectra of nuclei:}
+		\end{itemize}
+		\begin{align}
+			R(\theta,\varphi)=R_0\left(1+\sum_{\mu=-2}^2\alpha_{2\mu}Y_2^\mu(\theta,\varphi)\right)\ ,
+		\end{align}
+	\end{block}
 \end{frame}
+
+
 \subsection{Nuclear Triaxiality}
 \begin{frame}
     \frametitle{Text}
