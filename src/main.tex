@@ -4,6 +4,8 @@
 
 \usepackage{beamerthemesplit}
 
+\usepackage{xmpmulti}
+\usepackage{animate}
 \usepackage{fontawesome}
 
 
@@ -71,13 +73,13 @@
     \frametitle{Aim}
     \begin{block}{\faClipboard Research Objectives}
         \begin{itemize}
-            \item Extend the current interpretation of the nuclear triaxiality from a theoretical standpoint.
-            \item Provide new formalisms for the phenomena related to \emph{nuclear deformation}.
+            \item Extend the current interpretation of the \textbf{nuclear triaxiality} in the context of its unique fingerprint: \textbf{Nuclear Wobbling Motion}. {\footnotesize\emph{from a theoretical standpoint}}
+            \item Provide new formalisms for the phenomena related to \textbf{nuclear deformation}.
         \end{itemize}
     \end{block}
     \begin{exampleblock}{\faClipboard Objectives exclusive to the thesis}
         \begin{itemize}
-            \item Give a detailed theoretical background and context towards a better understanding of the underlying concepts for the reader.
+            \item Give the reader a sufficiently rich theoretical background and context towards a better understanding of the underlying concepts.
             \item \faGithub create a completely \emph{open-source} project.
         \end{itemize}
     \end{exampleblock}
@@ -88,7 +90,7 @@
     \vspace{-0.3cm}
     \begin{itemize}
         \item \textbf{Nuclear Triaxiality} has become a \emph{hot topic} within the scientific community.
-        \item Identifying nuclei with triaxial deformations represents a real \textbf{experimental} and \textbf{theoretical} challenge
+        \item Identifying nuclei with triaxial deformations represents a real \textbf{experimental} and \textbf{theoretical} challenge.
         % \item Experimental side: large setups, complex electronics, 
         % \item Theoretical side: cumbersome models, approximations, abstractions...
     \end{itemize}
@@ -120,6 +122,11 @@
 
 \section{Introduction}
 
+\begin{frame}
+    \transduration<0-5>{0}
+    \multiinclude[<+->][format=png, graphics={width=\textwidth}]{figures/wobbler-gif/wobbler}
+    % \animategraphics[loop,controls,width=\linewidth]{10}{figures/wobbler-gif/wobbler-}{0}{5}
+\end{frame}
 
 \subsection{Nuclear Shapes}
 \begin{frame}
