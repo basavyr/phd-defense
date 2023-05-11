@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "footline",
         "JUROGAM"
-    ]
+    ],
+    "sarif-viewer.connectToGithubCodeScanning": "off"
 }
