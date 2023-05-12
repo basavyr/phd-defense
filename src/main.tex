@@ -11,6 +11,7 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{fontawesome}
+\usepackage{tikz}
 
 % \usepackage{svg}
 \usepackage[inkscapeformat=png]{svg}
@@ -109,14 +110,78 @@
     \end{figure}
 \end{frame}
 
+
+\section{Nuclear Shapes}
+
+\begin{frame}
+	\frametitle{Nuclear Deformation}
+	\begin{exampleblock}{Nuclear Radius}
+		The \textbf{shape} of the nucleus is most generally described in terms of the \emph{nuclear radius}:
+		\begin{align}
+			R(\theta,\varphi)=R_0\left(1+\sum_{\lambda=0}^{^\infty}\sum_{\mu=-\lambda}^\lambda\alpha_{\lambda\mu}Y_\lambda^\mu(\theta,\varphi)\right)
+		\end{align}
+	\end{exampleblock}
+	% \begin{itemize}
+	% 	\item The $\alpha_{\lambda\mu}$ are collective coordinates $\Longrightarrow$ \emph{vibrations of the nucleus}.
+	% 	\item $Y_\lambda^\mu$ are the spherical harmonics.
+	% \end{itemize}
+	\begin{block}{Quadrupole deformations $\lambda=2$}
+
+		\begin{itemize}
+			\item {\color{red}For us:} Most relevant modes are the \textbf{quadrupole vibrations} $\lambda=2$ $\Longrightarrow$ \emph{Play a crucial role in the rotational spectra of nuclei:}
+			\item \textit{Bohr, 1969}: Coordinates $\alpha_{2\mu}$ can be reduced to only two \emph{deformation parameters}: $\beta_2$ (\textbf{eccentricity}) and $\gamma$ (\textbf{triaxiality}).
+		\end{itemize}
+		% \begin{align}
+		% 	R(\theta,\varphi)=R_0\left(1+\sum_{\mu=-2}^2\alpha_{2\mu}Y_2^\mu(\theta,\varphi)\right)\ ,
+		% \end{align}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Axial shapes}
+	\vspace{-0.2cm}
+	\begin{block}{Collective coordinates}
+		\begin{itemize}
+			\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state \textit{(Budaca, 2018)}.
+            \item Moments of inertia: $\mathcal{I}_{1,2,3}$: two are equal, one is different.
+		\end{itemize}
+	\end{block}
+	\vspace{-0.4cm}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.38]{figures/nuclear_shapes.png}
+		\caption{\textbf{spherical:} $\beta_2=0$\ \textbf{prolate:} $\beta_2>0$\ \textbf{oblate:} $\beta_2<0$.\ ($\gamma=0^\circ$).}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Non-axial shapes}
+	\vspace{-0.2cm}
+	\begin{itemize}
+		\item The triaxiality parameter $\gamma\neq 0^\circ$: departure from axial symmetry.
+		\item Moments of inertia: $\mathcal{I}_{1}\neq\mathcal{I}_{2}\neq\mathcal{I}_{3}$.
+	\end{itemize}
+	\vspace{-0.2cm}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.49]{figures/nice_diagram.pdf}
+		\includegraphics[scale=0.20]{figures/triaxial-shape.pdf}
+		\vspace{-0.41cm}
+	\end{figure}
+\end{frame}
+
+
+
+\section{Triaxiality and Wobbling Motion}
+
 \begin{frame}
 	\frametitle{Fingerprints of Triaxiality}
 	\begin{block}{Evidence \faSearch}
 		\begin{itemize}
 			\item Currently, there are \textbf{only two} well-established phenomena uniquely attributed to triaxial deformation.
 			\begin{enumerate}
-				\item \textbf{Wobbling Motion} WM (\emph{Bohr and Mottelson, 1950s})
-				\item \textbf{Chiral Motion} $\chi$M (\emph{Frauendorf, 1997})
+				\item \textbf{Wobbling Motion} - WM (\emph{Bohr and Mottelson, 1970s})
+				\item Chiral Motion - $\chi$M (\emph{Frauendorf, 1997})
 			\end{enumerate}
 			\item These two can be measured/detected experimentally.
 		\end{itemize}
@@ -141,6 +206,7 @@
             {\color{blue}Beam(N_1,E)}\ +\ {\color{magenta}Target(N_2)}\longrightarrow N_3^*\rightarrow\dots\rightarrow {\color{purple}triaxial(N_4)} \nonumber
         \end{align}
     \end{itemize}
+	\vspace{-0.3cm}
     \begin{figure}
         \centering
         % \includegraphics[scale=0.6]{figures/fusion-evaporation.png}
@@ -151,103 +217,51 @@
 
 \begin{frame}
 	\frametitle{\faSearch\ Nuclear facilities}
+	\vspace{-0.3cm}
 	\begin{columns}
 		\column{0.4\textwidth}
 		\begin{figure}
 		\centering
-		\includegraphics[width=0.86\textwidth]{figures/gsfig.jpg}
+		\includegraphics[width=0.88\textwidth]{figures/gsfig.jpg}
 		\caption{Gammasphere detector, ANL-ATLAS USA. \textit{Source: aps.org}}
 	\end{figure}
 	\column{0.6\textwidth}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.98\textwidth]{figures/isolde_cern_2.png}
+		\includegraphics[width=0.99\textwidth]{figures/isolde_cern_2.png}
 		\caption{a) IDS detector, CERN. \textit{Source: isolde.web.cern.ch} b) JUROGAM II, Finland. \textit{Source: twitter.com}}
 		\end{figure}
 	\end{columns}
 \end{frame}
 
-\section{Introduction}
-
-\subsection{Nuclear Shapes}
-
-\begin{frame}
-	\frametitle{Nuclear Shapes (in the context of WM)}
-	\begin{exampleblock}{Nuclear Radius}
-		The \textbf{shape} of the nucleus is most generally described in terms of the \emph{nuclear radius}:
-		\begin{align}
-			R(\theta,\varphi;t)=R_0\left(1+\sum_{\lambda=0}^{^\infty}\sum_{\mu=-\lambda}^\lambda\alpha_{\lambda\mu}(t)Y_\lambda^\mu(\theta,\varphi)\right)
-		\end{align}
-	\end{exampleblock}
-	% \begin{itemize}
-	% 	\item The $\alpha_{\lambda\mu}$ are collective coordinates $\Longrightarrow$ \emph{vibrations of the nucleus}.
-	% 	\item $Y_\lambda^\mu$ are the spherical harmonics.
-	% \end{itemize}
-	\begin{block}{Quadrupole deformations}
-
-		\begin{itemize}
-			\item {\color{red}For us:} Most relevant modes are the \textbf{quadrupole vibrations} $\lambda=2$ $\Longrightarrow$ \emph{Play a crucial role in the rotational spectra of nuclei:}
-		\end{itemize}
-		% \begin{align}
-		% 	R(\theta,\varphi)=R_0\left(1+\sum_{\mu=-2}^2\alpha_{2\mu}Y_2^\mu(\theta,\varphi)\right)\ ,
-		% \end{align}
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Axial shapes}
-	\vspace{-0.2cm}
-	\begin{block}{Collective coordinates}
-		\begin{itemize}
-			\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state (Budaca, 2018).
-            \item Coordinates $\alpha_{2\mu}$ can be reduced to only two \emph{deformation parameters}: $\beta_2$ (\emph{eccentricity}) and $\gamma$ (triaxiality).
-            \item Moments of inertia: $\mathcal{I}_{1,2,3}$: two are equal, one is different.
-		\end{itemize}
-	\end{block}
-	\vspace{-0.4cm}
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.38]{figures/nuclear_shapes.png}
-		\caption{\textbf{spherical:} $\beta_2=0$\ \textbf{prolate:} $\beta_2>0$\ \textbf{oblate:} $\beta_2<0$.\ ($\gamma=0^\circ$).}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Non-axial (triaxial) shapes}
-	\vspace{-0.2cm}
-	\begin{itemize}
-		\item The triaxiality parameter $\gamma$ (\textit{Bohr, 1969}): departure from axial symmetry.
-		\item Moments of inertia: $\mathcal{I}_{1}\neq\mathcal{I}_{2}\neq\mathcal{I}_{3}$.
-	\end{itemize}
-	\vspace{-0.2cm}
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.49]{figures/nice_diagram.pdf}
-		\includegraphics[scale=0.20]{figures/triaxial-shape.pdf}
-		\vspace{-0.41cm}
-	\end{figure}
-\end{frame}
 
 \begin{frame}
 	\frametitle{Wobbling Motion}
-		\begin{columns}
-			\begin{column}{0.6\textwidth}
-				\begin{block}{Characteristics}
-					\begin{itemize}
-						\item $\gamma\neq0^\circ\rightarrow$ MOI anisotropy $\rightarrow$ the \emph{main rotation} around $\mathcal{J}_\text{max}$ is disturbed by the other two axes  $\rightarrow$ \textbf{resulting motion of the rotating nucleus has an oscillating behavior}
-						\item The \textbf{total angular momentum } (a.m.) \textbf{precesses} and \textbf{wobbles} around $\mathcal{J}_\text{max}$
-						\item Tilting by an energy quanta $\sim$ \emph{vibrational character} $\rightarrow$ \textbf{wobbling phonon} $n_w=0,1,2...$
-					\end{itemize}
-				\end{block}
-			\end{column}
-			\begin{column}{0.4\textwidth}
-				\begin{figure}
-					\includegraphics[width=\textwidth]{figures/wobbling-schematic.png}
-					\vspace{-0.7cm}
-					\caption{Geometrical interpretation of a wobbling triaxial nucleus: \emph{rotation + precession + oscillation}. \emph{R. Poenaru, PhD Thesis (WIP)}}
-				\end{figure}
-			\end{column}
-		\end{columns}
+	\vspace{-0.4cm}
+	\begin{columns}
+		\begin{column}{0.55\textwidth}
+			\begin{center}
+				\begin{tikzpicture}[node distance=1.5cm]
+					\node[draw, fill=blue!20!white, text width=3cm, text centered, minimum height=1cm] (box1) {$\gamma\neq0^\circ$};
+					\node[draw, fill=blue!20!white, text width=4cm, text centered, minimum height=1cm, below of=box1] (box2) {MOI anisotropy};
+					\node[draw, fill=blue!20!white, text width=6cm, text centered, minimum height=1cm, below of=box2] (box3) {\emph{main rotation} around $\mathcal{J}_\text{max}$ is disturbed by the other two axes};
+					\draw[->] (box1) -- (box2);
+					\draw[->] (box2) -- (box3);
+				\end{tikzpicture}
+			\end{center}
+		\end{column}
+		\begin{column}{0.45\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{figures/wobbling-schematic.png}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vspace{-0.4cm}
+	\begin{alertblock}{Wobbling Effect}
+		\begin{itemize}
+			\item The \textbf{total angular momentum} of the nucleus \textbf{precesses} and \textbf{oscillates} around $\mathcal{J}_\text{max}$.
+		\end{itemize}
+	\end{alertblock}
 \end{frame}
 
 
