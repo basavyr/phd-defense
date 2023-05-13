@@ -11,7 +11,11 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{fontawesome}
+\usepackage{tcolorbox}
+
 \usepackage{tikz}
+\usetikzlibrary{calc}
+
 
 % \usepackage{svg}
 \usepackage[inkscapeformat=png]{svg}
@@ -170,8 +174,6 @@
 	\end{figure}
 \end{frame}
 
-
-
 \section{Triaxiality and Wobbling Motion}
 
 \begin{frame}
@@ -299,8 +301,8 @@
 \begin{frame}
 	\frametitle{Even-$A$ vs. Odd-$A$ Picture}
 	\begin{itemize}
-		\item Predicted for even-$A$ nuclei.
-		\item First experimental evidence for \textbf{nuclear wobbling motion} in 2001: $^{163}$Lu (\textit{Ødegård, 2001}).
+		\item Predicted for even-$A$ nuclei more than 50 years ago.
+		\item First experimental evidence for \textbf{nuclear wobbling motion}: $^{163}$Lu (\textit{Ødegård, 2001}).
 		\item Current mass-regions for wobblers: $A=130,160,180$.
 	\end{itemize}
 	\begin{figure}
@@ -310,7 +312,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Latest wobblers A=130}
+	\frametitle{Wobblers in the A=130 mass region}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.87\textwidth]{figures/wobblers-chart-2.pdf}
@@ -318,7 +320,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Latest wobblers A=160}
+	\frametitle{Wobblers in the A=160 mass region}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.99\textwidth]{figures/wobblers-chart-4.pdf}
@@ -326,12 +328,12 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Latest wobblers A=180}
+	\frametitle{Wobblers in the A=180 mass region}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.99\textwidth]{figures/wobblers-chart-3.pdf}
 	\end{figure}
-	Recent progress around $A\approx100$ (?)
+	Recent progress around $A\approx100$ \faQuestion
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.99\textwidth]{figures/wobblers-chart-1.pdf}
@@ -345,8 +347,16 @@
 	\begin{columns}
 		\begin{column}{0.55\textwidth}
 			\begin{itemize}
-				\item Experimental data shows $/Users/basavyr/Documents/Work/PhD/phd-resources/Papers/Wobbling-Nuclei/Wang_Wobbling-130Ba.pdf$. 
+				\item \faSearch\ Experimental measurements show \textbf{two} wobbling bands (\textit{Petrache et. al. 2019}).
 			\end{itemize}
+			\begin{exampleblock}{Harmonic formalism}
+				Applied the Harmonic Approximation \textit{Bohr \& Mottelson, 1969}.
+				\begin{align}
+					E_{I,n_w}&={\color{red}A_3I(I+1)}+{\color{blue}\hbar\omega_w\left(n_w+\frac{1}{2}\right)}\nonumber\\
+					A_3&=(2\mathcal{I}_3)^{-1}\nonumber
+				\end{align}
+				({\color{red}rotational term} + {\color{blue}wobbling frequency})
+			\end{exampleblock}
 		\end{column}
 		\begin{column}{0.45\textwidth}
 			\begin{figure}
@@ -358,6 +368,75 @@
 		\end{column}
 	\end{columns}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Results for $^{130}$Ba}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.49\textwidth]{figures/ba130-band1.pdf}
+				\includegraphics[width=0.49\textwidth]{figures/ba130-band2.pdf}
+			\end{figure}				
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\begin{table}
+				\centering
+				% \caption{The parameter set obtained from the \emph{fitting procedure}.}
+				\resizebox{0.9\textwidth}{!}{%
+				\begin{tabular}{cccc}
+				\hline
+				\multicolumn{4}{c}{$\mathcal{P}_\text{fit}$} \\ \hline \hline
+				\multicolumn{1}{c}{$\mathcal{I}_1$} & \multicolumn{1}{c}{$\mathcal{I}_2$} & \multicolumn{1}{c}{$\mathcal{I}_3$} & \multicolumn{1}{c}{Unit}                     \\ \hline
+				\multicolumn{1}{c}{27}              & \multicolumn{1}{c}{22}              & \multicolumn{1}{c}{\textbf{43}}              & \multicolumn{1}{c}{$\hbar^2\text{MeV}^{-1}$} \\ \hline
+				\end{tabular}%
+				}
+				\label{table-params-ba130}
+			\end{table}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.99\textwidth]{figures/ba130-EM.pdf}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	
+	% use color box
+	% \begin{tcolorbox}[colback=white, colframe=black, arc=2mm]
+		% 	\centering
+		% 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+			% 		\centering
+			% 		\textcolor{red}{\textit{Results presented at the international conference NSP, 2022, Turkey.}}
+			% 	\end{beamercolorbox}
+			% \end{tcolorbox}
+			
+	% no color box
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		Full model description implementation: Chapter 3 (Section 3.1.2)\\
+		\textcolor{red}{\textit{Results presented at the international conference NSP, 2022, Turkey.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Results for $^{130}$Ba II}
+	\textbf{Excitation energies} vs. \textbf{Wobbling Energies}:
+	\begin{align}
+		E_\text{wob}(I_\text{even})&=E_{I,n}-E_{I,0}\ ,\nonumber \\
+		E_\text{wob}(I_\text{odd})&=E_{I,n}-\frac{1}{2}\left(E_{I-1,0}+E_{I+1,0}\right) \nonumber
+	\end{align}
+	\vspace{-0.6cm}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.6]{figures/ba130-wobbling-energies-edited.pdf}
+		\includegraphics[scale=0.55]{figures/ba130-rotational-frequencies.pdf}
+	\end{figure}
+	\vspace{-0.2cm}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\small{\textit{Results presented at the international conference NSP, 2022, Turkey.}}}
+	\end{beamercolorbox}
+\end{frame}
+
 
 % \item Predicted: more than 50 years ago. First confirmed for $^{163}$Lu (\textit{Ødegård} et. al., 2001)
 % \item Currently confirmed wobblers $A\approx[100,130,160,180]$.
