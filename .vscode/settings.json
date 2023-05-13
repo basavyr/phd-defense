@@ -3,8 +3,11 @@
         "FFUB",
         "footline",
         "infn",
+        "Ixaru",
         "JUROGAM",
-        "Sensharma"
+        "Sensharma",
+        "stfc",
+        "technologysi"
     ],
     "sarif-viewer.connectToGithubCodeScanning": "off"
 }

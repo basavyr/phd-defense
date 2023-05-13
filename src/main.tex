@@ -10,8 +10,19 @@
 \usepackage{physics}
 \usepackage{xcolor}
 \usepackage{graphicx}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{tcolorbox}
+
+
+
+\usepackage{mathtools}
+
+
+\usepackage{amssymb}
+\usepackage{multirow}
+
+\usepackage{physics}
+\usepackage{mathrsfs}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -366,9 +377,9 @@
 			\begin{figure}
 				\centering
 				\includegraphics[width=0.99\textwidth]{figures/galileo_exp.jpg}
-				\caption{GALILEO, \textit{Source: lnl.infn.it}}
+				{\footnotesize GALILEO, LNL, \textit{Source: lnl.infn.it}}
 			\end{figure}
-			Fusion evaporation: $^{13}$C beam of $E=65\ \text{MeV}$ and $^{122}$Sn target.
+			{\footnotesize Fusion evaporation: $^{13}$C beam of $E=65\ \text{MeV}$ and $^{122}$Sn target.}
 		\end{column}
 	\end{columns}
 \end{frame}
@@ -416,7 +427,7 @@
 	% no color box
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
-		Full model description implementation: Chapter 3 (Section 3.1.2)\\
+		Full description: Chapter 3 (Section 3.1.2)\\
 		\textcolor{red}{\textbf{Results presented at the international conference NSP-2022, Turkey.}}
 	\end{beamercolorbox}
 \end{frame}
@@ -439,6 +450,61 @@
 		\centering
 		\textcolor{red}{\small{\textbf{Results presented at the international conference NSP-2022, Turkey.}}}
 	\end{beamercolorbox}
+\end{frame}
+
+\section{Wobbling Motion in Odd-A}
+
+\subsection{Starting Point}
+
+\begin{frame}
+	\frametitle{The "seed"}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			{\footnotesize \faFile\ A. A. Raduta, \textbf{R. Poenaru}, L. Gr. Ixaru, PRC, 2017} + {\footnotesize \faFile\ A. A. Raduta, \textbf{R. Poenaru}, Al. H. Raduta, JPG, 2018}$\to${\footnotesize $\mathbf{W}_0$ in the thesis.}
+			\begin{exampleblock}{Framework}
+				\begin{itemize}
+					\item \textbf{First semi-classical description} for the $^{163}$Lu, using the Particle-Rotor-Model (\textit{Hamamoto, 2002}.) for an odd-mass nucleus in the $A\approx 160$ region.
+				\end{itemize}
+			\end{exampleblock}
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.99\textwidth]{figures/euroball-4.jpg}
+				{\footnotesize Euroball IV, Strasbourg, \textit{Source: technologysi.stfc.ac.uk}}
+			\end{figure}
+			{\footnotesize Fusion evaporation: $^{29}$Si beam of $E=152\ \text{MeV}$ and $^{139}$La target.}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Overview}
+	\vspace{-0.3cm}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			\begin{itemize}
+				\item Time-Dependent Variational Principle applied on the PRM Hamiltonian
+				\item \textbf{Phonon operators} $\rightarrow$ energies + transition probabilities
+			\end{itemize}
+			\vspace{-0.5cm}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.9\textwidth]{figures/w0_phonon_operator.pdf}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.99\textwidth]{figures/lu-163-exp-data.eps}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$\mathbf{W}_0$ Drawbacks}
+	
 \end{frame}
 
 
