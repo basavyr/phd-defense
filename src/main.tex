@@ -981,7 +981,7 @@
 	\frametitle{Fresh-Up 2: $\mathbf{W}_2$}
 	\begin{block}{Novel description}
 		\begin{itemize}
-			\item All four bands in $^{163}$Lu described by the same triaxial core + odd-particle coupling.
+			\item All four bands in $^{163}$Lu described by the same triaxial core + odd-particle coupling $\longrightarrow \mathcal{Q}_1=\pi^+(i_{13/2})$
 			\item The adopted wave-function admits states of both \textbf{positive and negative parity}.
 			\begin{align}
 				\bar{\Psi}=&p\Psi\nonumber\ ,\\
@@ -1059,7 +1059,7 @@
 	\end{figure}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
-		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics, 2021.}}
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 308, 2021.}}
 	\end{beamercolorbox}
 \end{frame}
 
@@ -1072,7 +1072,7 @@
 	\end{figure}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
-		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics, 2021.}}
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 308, 2021.}}
 	\end{beamercolorbox}
 \end{frame}
 
@@ -1092,11 +1092,114 @@
 
 \begin{frame}
 	\frametitle{Classical Energy Function}
+	\begin{block}{Angular momentum}
+		Polar representation of the angular momentum and $\mathcal{H}$.
+		\begin{align}
+			\mathbf{I}=&\left\{I_1,I_2,I_3\right\}\equiv\left\{x_1,x_2,x_3\right\}\ ,\nonumber\\
+			x_1=I\sin\theta\cos\varphi\ ,&\ x_2=I\sin\theta\sin\varphi\ ,\ x_3=I\cos\theta.\nonumber
+		\end{align}
+	\end{block}
+	\vspace{-0.5cm}
 	\begin{align}
-		\left. \mathcal{H}\ \right\vert_{p_0}&=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot \mathcal{A}_\varphi-2A_1Ij\sin\theta+T_\text{core}+T_\text{sp}\ ,\\
-		T_\text{core}&=\frac{I}{2}(A_1+A_2)+A_3I^2\ ,\nonumber\\
-		T_\text{s.p.}&=\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)\ .
+		\left. \mathcal{H}\ \right\vert_{p_0}&=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot \mathcal{A}_\varphi-2A_1Ij\sin\theta+{\color{red}T_\text{core}}+{\color{blue}T_\text{sp}}\ ,\nonumber\\
+		\mathcal{A}_\varphi&=A_1\cos^2\varphi+A_2\sin^2\varphi-A_3.\nonumber\\
+		{\color{red}T_\text{core}}&={\color{red}\frac{I}{2}(A_1+A_2)+A_3I^2}\ ,\nonumber\\
+		{\color{blue}T_\text{s.p.}}&={\color{blue}\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)}\nonumber
 	\end{align}
+\end{frame}
+
+\begin{frame}
+	\frametitle{CEF | Stability Regions}
+	\vspace{-0.5cm}
+	\begin{columns}
+		\begin{column}{0.45\textwidth}
+			\begin{table}
+				\centering
+				\caption{The minimum points of $\mathcal{H}$. Using the MOIs from the fitting procedure}
+				\resizebox{\textwidth}{!}{%
+					\begin{tabular}{cccc}
+					\hline
+					Minimal point & $\theta$ [rad] & $\varphi$ [rad] & $A_k$ ordering \\
+					\hline
+					\hline
+					$m_1$ & $\pi/2$ &   $0$     &   $A_3>A_2>A_1$   \\
+					$m_2$ & $\pi/2$ &   $\pi$   &   $A_3>A_2>A_1$   \\
+					$m_3$ & $\pi/2$ &   $2\pi$  &   $A_3>A_2>A_1$   \\
+					\hline
+					\end{tabular}
+				}
+			\end{table}		
+			\begin{alertblock}{Semi-classical feature}
+				This is the first classical description of the \emph{wobbling stability} for an odd-mass nucleus.
+			\end{alertblock}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.99\textwidth]{figures/parity-partners-plots/H-unstable-edited.pdf}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Polar representation of $\mathcal{H}$}
+	\vspace{-1cm}
+	\begin{figure}
+		\centering
+		\caption{$^{163}$Lu TSD1}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd1-1.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd1-2.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Polar representation of $\mathcal{H}$ II}
+	\vspace{-1cm}
+	\begin{figure}
+		\centering
+		\caption{$^{163}$Lu TSD2}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd2-1.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd2-2.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Polar representation of $\mathcal{H}$ III}
+	\vspace{-1cm}
+	\begin{figure}
+		\centering
+		\caption{$^{163}$Lu TSD3}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd3-1.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd3-2.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Polar representation of $\mathcal{H}$ IV}
+	\vspace{-1cm}
+	\begin{figure}
+		\centering
+		\caption{$^{163}$Lu TSD4}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd4-1.pdf}
+		\includegraphics[width=0.49\textwidth]{figures/parity-partners-plots/contour-tsd4-2.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
 \end{frame}
 
 \begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
