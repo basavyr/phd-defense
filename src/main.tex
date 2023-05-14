@@ -24,6 +24,8 @@
 \usetheme{Copenhagen}
 \useoutertheme{infolines}
 
+\newcommand{\iu}{{i\mkern1mu}}
+
 \title[Systematic Description of W.M.]{A Systematic Description of the Wobbling Motion in Odd-Mass Nuclei Within a Semi-Classical Formalism}
 
 
@@ -1322,10 +1324,36 @@
 		\item Based on the work: A.A. Raduta, C.M. Raduta, \textbf{R Poenaru}, Journal of Physics G 48, 2020
 		\item Results were presented at the \textbf{International Conference TIM-22} (Timisoara) and \textbf{World Quantum Day 2023} (IFIN-HH)
 	\end{itemize}
+	\begin{alertblock}{Model Features}
+		\begin{itemize}
+			\item Extend the boson description for the even-even nuclei made by the team in 2017 to odd-mass nuclei.
+			\item Use the \emph{Cranked} Particle-Rotor Model to study the wobbling spectrum of $^{135}$Pr.
+			\begin{align}
+				\hat{H}_\text{rot}&={\color{red}AH'}+{\color{blue}H_{sp}}+{\color{magenta}\text{s.t.}}
+			\end{align}
+		\end{itemize}
+	\end{alertblock}
 	% \begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 	% 	\centering
 	% 	\textcolor{red}{\footnotesize{A.A. Raduta, C.M. Raduta, \textbf{R Poenaru}, Journal of Physics G 48, 2020.}}
 	% \end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Rotational Hamiltonian}
+	\begin{exampleblock}{Rigid coupling Hamiltonian: $\mathbf{j}=(j\cos\theta,j\sin\theta,0)$}
+		\begin{align}
+			{\color{red}H'}&=\hat{I}_2^2+u\hat{I}_3^2+2v_0\hat{I}_1\ ,\ {\color{blue}H_{sp}}=\sum_{k=1}^2A_k\hat{j}_k^2\ ,\ {\color{magenta}\text{s.t.}}=A_1I^2-A_2j_2I\ ,\nonumber\\
+			1>u&=\frac{A_3-A_1}{A}>-1\ ,\ v_0-\frac{A_1j_1}{A}\ ,\ A=A_2\left(1-\frac{j_2}{I}\right)>0\nonumber
+		\end{align}
+	\end{exampleblock}
+	\begin{itemize}
+		\item the triaxial rigid rotor is constrained to move around the $1$-axis.
+		\item The a.m. algebra is defined as:
+		\begin{align}
+			\hat{I}_\pm=\hat{I}_2\pm \iu\hat{I}_3\ &,\ \hat{I}_0=\hat{I}_1\ ,\ \left[\hat{I}_-,\hat{I}_+\right]=2\hat{I}_0\ ,\ \left[\hat{I}_\mp,\hat{I}_0\right]=\mp\hat{I}_\mp\ .\nonumber
+		\end{align}
+	\end{itemize}
 \end{frame}
 
 \subsection{Case-Study}
