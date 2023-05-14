@@ -740,7 +740,7 @@
 	\frametitle{$\mathbf{W}_1$ | Numerical Results}
 	\begin{itemize}
 		\item Free parameters in the model $\rightarrow\mathcal{P}_\text{fit}=\left[\mathcal{I}_1,\mathcal{I}_2,\mathcal{I}_3,V,\gamma\right]$.
-		\item $V$: single-particle potential strength $\propto\beta_2$ (\textit{Tanabe, 20017})
+		\item $V$: single-particle potential strength $\propto\beta_2$ (\textit{Tanabe, 2017})
 	\end{itemize}
 	\begin{block}{Fitting procedure}
 		\vspace{-0.4cm}
@@ -1048,6 +1048,7 @@
 			\item $\gamma$ in agreement with exp. value $\gamma_{exp}=20^\circ$ (\emph{Jensen, 2004})
 			\item Slight \emph{decrease} of $V$ (? breaking of parity symmetry quenches the quadrupole deformation)
 			\item overall $E_{RMS}\approx79$ keV: \textbf{first semi-classical description for a nucleus with deviations smaller than $100$ keV}.
+			% \item Signature and Parity corrections: $\epsilon_{13/2}^1=0.3$, $\epsilon_{13/2}^2=0.6$
 		\end{itemize}
 	\end{exampleblock}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
@@ -1085,12 +1086,14 @@
 
 \begin{frame}
 	\frametitle{Wobbling Energies}
+	\vspace{-0.5cm}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.51\textwidth]{figures/Wobbling-Energy-Parity-Partners.pdf}
 		\includegraphics[width=0.48\textwidth]{figures/parity-partners-plots/wobblingFrequency.pdf}
 	\end{figure}
-	The wobbling energy (\textbf{left}) and the two wobbling frequencies (\textbf{right}) for $^{163}$Lu.
+	\vspace{-0.5cm}
+	The wobbling energy (\textbf{left}) and the two wobbling frequencies (\textbf{right}) for $^{163}$Lu. \textbf{Decreasing trend of $E_\text{wob}$ in agreement with arguments of Frauendorf 2014.}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
 		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 308, 2021.}}
@@ -1241,6 +1244,66 @@
 		\item Formalism $\mathbf{W}_2$ gives a 3D interpretation of the nuclear wobbling motion
 		\item \textbf{Classical Trajectories}: intersection curves between the \textbf{triaxial energy} and the \textbf{total angular momentum}
 	\end{itemize}
+	\begin{align}
+		I^2&=x_1^2+x_2^2+x_3^2,\nonumber\\
+		E&=\left(1-\frac{1}{2I}\right)A_1x_1^2+\left(1-\frac{1}{2I}\right)A_2x_2^2+\left[\left(1-\frac{1}{2I}\right)A_3+A_1\frac{j}{I}\right]x_3^2-\nonumber\\
+		&-I\left(I-\frac{1}{2}\right)A_3-2A_1Ij+{\color{red}T_\text{rot}}+{\color{blue}T_\text{sp}}.\nonumber
+	\end{align}
+	Energy surface: $E'=\frac{x_1^2}{s_1}+\frac{x_2^2}{s_2}+\frac{x_3^2}{s_3}$.
+\end{frame}
+
+\begin{frame}
+	\frametitle{$^{163}$Lu | Classical trajectories}
+	\vspace{-0.5cm}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.82\textwidth]{figures/parity-partners-plots/classical-trajectory-TSD1.pdf}
+		\includegraphics[width=0.82\textwidth]{figures/parity-partners-plots/classical-trajectory-TSD2.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$^{163}$Lu | Classical trajectories II}
+	\vspace{-0.5cm}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.82\textwidth]{figures/parity-partners-plots/classical-trajectory-TSD3.pdf}
+		\includegraphics[width=0.82\textwidth]{figures/parity-partners-plots/classical-trajectory-TSD4.pdf}
+	\end{figure}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{R. Poenaru}, A.A. Raduta, Romanian Journal of Physics 66, 309, 2021.}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$^{163}$Lu | Classical trajectories III}
+	\begin{exampleblock}{Model characteristics}
+		\begin{itemize}
+			\item From the figures:
+			\begin{itemize}
+				\item the state $I=25/2^+$ from TSD1 has a real energy of about $2.6\ \text{MeV}$
+				\item the \textbf{critical value} requires twice that amount.
+			\end{itemize}
+			\item unstable trajectories can be identified for each state (i.e., the middle figs)
+			\item \textbf{phase transitions} between rotational modes can be identified (i.e., right figs)
+		\end{itemize}
+	\end{exampleblock}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{\textbf{Results were presented at the International Conference TIM-22, Timisoara.}}}
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}
+	\frametitle{<title>}
+
+	
+
 \end{frame}
 
 \begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
