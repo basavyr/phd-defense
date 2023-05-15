@@ -74,10 +74,17 @@
 	\titlepage % Output the title slide, automatically created using the text entered in the PRESENTATION INFORMATION block above
 \end{frame}}
 
-\begin{frame}
-    \frametitle{TOC}
-    \tableofcontents
-\end{frame}
+
+\AtBeginSection[]{
+	\begin{frame}{Outline}
+	\small \tableofcontents[currentsection, hideothersubsections]
+	\end{frame} 
+}
+
+% \begin{frame}
+%     \frametitle{TOC}
+%     \tableofcontents
+% \end{frame}
 
 \section{Aim and Motivation}
 
@@ -1326,6 +1333,7 @@
 	\begin{itemize}
 		\item the triaxial rigid rotor is constrained to move around the $1$-axis.
 		\item adopted Frozen-Alignment approximation: $\mathbf{j}=(j\cos\theta,j\sin\theta,0)$ (\textit{Frauendorf, 2014})
+		\item $a_1$, $a_2$, $a_3$ inertial properties of the nucleus
 	\end{itemize}
 \end{frame}
 
@@ -1340,19 +1348,21 @@
 	\end{align}
 	\vspace{-0.9cm}
 	\begin{columns}
-		\begin{column}{0.4\textwidth}
-			$s,c,d$ are the \textbf{Jacobi Elliptic Functions}:\\
-			\vspace{-0.5cm}
-			\begin{align}
-				s&=\text{sn}(q,k),\nonumber\\
-				c&=\text{cn}(q,k),\nonumber\\
-				d&=\text{dn}(q,k).\nonumber
-			\end{align}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item $s,c,d$: Jacobi Elliptic Functions
+				\vspace{-0.4cm}
+				\begin{align}
+					s&=\text{sn}(q,k)\ ,\ c=\text{cn}(q,k),\nonumber\\
+					d&=\text{dn}(q,k).\nonumber
+				\end{align}
+				\item boson operators $b,b^\dagger,[b,b^\dagger]=1$
+			\end{itemize}
 		\end{column}
-		\begin{column}{0.6\textwidth}
+		\begin{column}{0.5\textwidth}
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.56]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
+				\includegraphics[scale=0.53]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
 			\end{figure}
 		\end{column}
 	\end{columns}
@@ -1432,7 +1442,7 @@
 	\end{itemize}
 \end{frame}
 
-\section{Contributions to Nuclear Physics}
+% \section{Contributions to Nuclear Physics}
 
 \begin{frame}
 	\frametitle{Original Contributions}
