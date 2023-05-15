@@ -85,14 +85,14 @@
     \frametitle{Aim}
     \begin{block}{\faClipboard\ Research Objectives}
         \begin{itemize}
-            \item Extend the current interpretation of the \textbf{nuclear triaxiality} in the context of its unique fingerprint: \textbf{Wobbling Motion}. % {\footnotesize\emph{from a theoretical standpoint}}
-            \item Adopt a framework that is as close as possible to \textbf{classical physics}.
-            \item Provide new formalisms for the phenomena related to \textbf{nuclear deformation}.
+            \item Extend the current interpretation of the \textbf{Nuclear Triaxiality} in the context of its unique fingerprint: \textbf{Wobbling Motion}. % {\footnotesize\emph{from a theoretical standpoint}}
+            \item Adopt a framework that is as close as possible to a \textbf{classical picture}.
+            % \item Provide new formalisms for the phenomena related to \textbf{nuclear deformation}.
         \end{itemize}
     \end{block}
     \begin{exampleblock}{\faClipboard\ Objectives exclusive to the thesis}
         \begin{itemize}
-            \item Give the reader enough context towards a better understanding of the underlying concepts, methods, and results.
+            \item Enough context towards a better understanding of the underlying concepts, methods, and results.
             \item \faGithub\ create a completely \emph{open-source} project.
         \end{itemize}
     \end{exampleblock}
@@ -100,9 +100,9 @@
 
 \begin{frame}
 	\frametitle{Motivation}
-    \vspace{-0.3cm}
+    \vspace{-0.2cm}
     \begin{itemize}
-        \item \textbf{Nuclear Triaxiality} has become a \emph{hot topic} within the scientific community.
+        \item \textbf{Nuclear Triaxiality} recently became a \emph{hot topic} within the scientific community.
         \item Identifying nuclei with triaxial deformations represents a real \textbf{experimental} and \textbf{theoretical} challenge.
         % \item Experimental side: large setups, complex electronics, 
         % \item Theoretical side: cumbersome models, approximations, abstractions...
@@ -114,13 +114,12 @@
     \end{figure}
 \end{frame}
 
-
 \section{Nuclear Shapes}
 
 \begin{frame}
 	\frametitle{Nuclear Deformation}
-	\begin{exampleblock}{Nuclear Radius}
-		The \textbf{shape} of the nucleus is most generally described in terms of the \emph{nuclear radius}:
+	\begin{exampleblock}{Nuclear shapes}
+		Most generally described in terms of the \textbf{nuclear radius}:
 		\begin{align}
 			R(\theta,\varphi)=R_0\left(1+\sum_{\lambda=0}^{^\infty}\sum_{\mu=-\lambda}^\lambda\alpha_{\lambda\mu}Y_\lambda^\mu(\theta,\varphi)\right)\nonumber
 		\end{align}
@@ -144,12 +143,10 @@
 \begin{frame}
 	\frametitle{Axial shapes}
 	\vspace{-0.2cm}
-	\begin{block}{Collective coordinates}
-		\begin{itemize}
-			\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state \textit{(Budaca, 2018)}.
-            \item Moments of inertia: $\mathcal{I}_{1,2,3}$: two are equal, one is different.
-		\end{itemize}
-	\end{block}
+	\begin{itemize}
+		\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state \textit{(Budaca, 2018)}.
+		\item Moments of inertia: $\mathcal{I}_{1,2,3}$: two are equal, one is different.
+	\end{itemize}
 	\vspace{-0.4cm}
 	\begin{figure}
 		\centering
@@ -308,8 +305,8 @@
 	\frametitle{Even-$A$ vs. Odd-$A$ Picture}
 	\begin{itemize}
 		\item Predicted for even-$A$ nuclei more than 50 years ago.
-		\item First experimental evidence for \textbf{nuclear wobbling motion}: $^{163}$Lu (\textit{Ødegård, 2001}).
-		\item Current mass-regions for wobblers: $A=130,160,180$.
+		\item First experimental evidence: $^{163}$Lu (\textit{Ødegård, 2001}). %  for \textbf{nuclear wobbling motion}
+		\item Current mass-regions for wobblers: $A\approx[130,160,180]$.
 	\end{itemize}
 	\begin{figure}
 		\centering
@@ -420,8 +417,8 @@
 	% no color box
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
-		Full description: Chapter 3 (Section 3.1.2)\\
-		\textcolor{red}{\textbf{Results presented at the international conference NSP-2022, Turkey.}}
+		{\footnotesize Full description: Chapter 3 (Section 3.1.2)}\\
+		\textcolor{red}{\footnotesize\textbf{Results presented at the international conference NSP-2022, Turkey.}}
 	\end{beamercolorbox}
 \end{frame}
 
@@ -517,17 +514,15 @@
 
 \begin{frame}
 	\frametitle{Fresh-Up 1: $\mathbf{W}_1$}
+	\vspace{-0.1cm}
 	Particle-Rotor Model Hamiltonian for an odd-$A$ nucleus:	
-	% \begin{align}
-	% 	\hat{H}={\color{red}\hat{H}_\text{rot}}+{\color{blue}\hat{H}_\text{sp}}\nonumber\\
-	% 	{\color{red}\hat{H}_\text{rot}}={\color{red}\sum_{k=1}^3A_k(\hat{I}_k-\hat{j}_k)^2}\nonumber\\
-	% 	{\color{blue}\hat{H}_\text{sp}}={\color{blue}\epsilon_j+\frac{V}{j(j+1)}\left[\cos\gamma\left(3\hat{j}_3^3-\mathbf{j}_\mathcal{Q}^2\right)-\sqrt{3}\sin\gamma\left(\hat{j}_1^2-\hat{j}_2^2\right)\right]}\nonumber
-	% \end{align}
-	\begin{alignat*}{2}
-		\hat{H}&={\color{red}\hat{H}_\text{rot}}+{\color{blue}\hat{H}_\text{sp}}\ ,\ {\color{red}\hat{H}_\text{rot}}={\color{red}\sum_{k=1}^3A_k(\hat{I}_k-\hat{j}_k)^2},\\
-		{\color{blue}\hat{H}_\text{sp}}&={\color{blue}\epsilon_j+\frac{V}{j(j+1)}\left[\cos\gamma\left(3\hat{j}_3^3-\mathbf{j}^2\right)-\sqrt{3}\sin\gamma\left(\hat{j}_1^2-\hat{j}_2^2\right)\right]}
-	\end{alignat*}
-	\vspace{-0.4cm}
+	\vspace{-0.28cm}
+	\begin{align}
+		\hat{H}&={\color{red}\hat{H}_\text{rot}}+{\color{blue}\hat{H}_\text{sp}}\ ,\ {\color{red}\hat{H}_\text{rot}}={\color{red}\sum_{k=1}^3A_k(\hat{I}_k-\hat{j}_k)^2},\nonumber\\
+		{\color{blue}\hat{H}_\text{sp}}&={\color{blue}\epsilon_j+\frac{V}{j(j+1)}\left[\cos\gamma\left(3\hat{j}_3^3-\mathbf{j}^2\right)-\sqrt{3}\sin\gamma\left(\hat{j}_1^2-\hat{j}_2^2\right)\right]}.\nonumber
+	\end{align}
+	\vspace{-0.3cm}
+	$V$ - single-particle potential strength $\propto\beta_2$ (\textit{Tanabe, 2017})
 	\begin{figure}
 		\centering
 		\includegraphics[scale=0.22]{figures/triaxial-shapes-oddA-1.pdf}
@@ -544,15 +539,14 @@
 	\frametitle{Variational Principle + Eqs. of Motion}
 	\begin{columns}
 		\begin{column}{0.6\textwidth}
-			\begin{exampleblock}{Time-Dependent Varational Equation}
+			\begin{exampleblock}{Time-Dependent Variational Equation}
 				\begin{align}
 					\delta&\int_0^t\bra{\Psi_{IM;j}}\hat{H}-i\frac{\partial}{\partial t'}\ket{\Psi_{IM;j}}dt'=0\nonumber\\
 					\Psi_\text{trial}&\equiv\ket{\Psi_{IM;j}}=\mathcal{N}{\color{red}e^{z\hat{I}_-}}\cdot{\color{blue}e^{s\hat{j}_-}}{\color{red}\ket{IMI}}\otimes{\color{blue}\ket{jj}}\nonumber
 				\end{align}
 				\vspace{-0.4cm}
 				\begin{itemize}
-					\item {\color{red}$(z,r,\varphi,\hat{I},\ket{IMI})$} - core ({\color{red}$\mathbf{R}$})
-					\item {\color{blue}$(s,f,\psi,\hat{j},\ket{jj})$} - single-particle ({\color{blue}$\mathbf{j}$})
+					\item {\color{red}$(z,r,\varphi,\hat{I},\ket{IMI})$} - core (rotor {\color{red}$\mathbf{R}$})
 					\item {\color{blue}$(s,f,\psi,\hat{j},\ket{jj})$} - single-particle ({\color{blue}$\mathbf{j}$})
 					\item $\{z,s\}\ \rightarrow$ \textbf{phase space coordinates}
 				\end{itemize}
@@ -587,24 +581,22 @@
 	\begin{align}
 		\Omega_{1,2}=\left[\frac{1}{2}\left(-B\mp\sqrt{B^2-4C}\right)\right]^{1/2}\nonumber
 	\end{align}
-	\vspace{-0.3cm}
-	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
-		\centering
-		\textcolor{red}{\footnotesize{A. A. Raduta, \textbf{R. Poenaru}, C. M. Raduta, Phys. Rev. C 101, 2020.}}
-	\end{beamercolorbox}
-	\vspace{-0.3cm}
 	\begin{itemize}
 		\item {\color{red}$\Omega_1$}: wobbling frequency of the {\color{red}even-$A$ core $\mathbf{R}$}
 		\item {\color{blue}$\Omega_2$}: wobbling frequency of the {\color{blue}odd-nucleon $\mathbf{j}$}
 		\item \textbf{Two wobbling phonon numbers: {\color{red}$n_{w_1}$} and {\color{blue}$n_{w_2}$}}
 	\end{itemize}
+	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
+		\centering
+		\textcolor{red}{\footnotesize{A. A. Raduta, \textbf{R. Poenaru}, C. M. Raduta, Phys. Rev. C 101, 2020.}}
+	\end{beamercolorbox}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Energy spectrum}
 	\begin{exampleblock}{Spectra of odd-A nuclei within $\mathbf{W}_1$}
 		\begin{align}
-			E_{I,n_1,n_2}=\epsilon_j+\mathcal{H}_\text{min}^I+{\color{red}\hbar\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{blue}\hbar\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}\nonumber
+			E_{I,n_1,n_2}=\epsilon_j+\mathcal{H}_\text{min}^I+\mathcal{F}_{n_{w_1}n_{w_2}}^I\nonumber
 			\label{tsd-bands-general-spectrum}
 		\end{align}
 	\end{exampleblock}
@@ -613,7 +605,8 @@
 		\begin{align}
 			\mathcal{F}_{n_{w_1}n_{w_2}}^I&={\color{red}\hbar\Omega_1^I\left(n_{w_1}+\frac{1}{2}\right)}+{\color{blue}\hbar\Omega_2^I\left(n_{w_2}+\frac{1}{2}\right)}\nonumber
 		\end{align}
-		\item $\mathcal{H}_\text{min}^I$ is the Classical Energy Function taken in its minimum point: $p_0=(0,I;0,j)$.
+		\item $\mathcal{H}_\text{min}^I$ - Classical Energy Function taken in its minimum point: $p_0=(0,I;0,j)$.
+		\item $\epsilon_j$ - single-particle energy
 	\end{itemize}
 \end{frame}
 
@@ -624,7 +617,7 @@
 		$TSD2=$ one-phonon wobbling band...
 	\end{exampleblock}
 	\begin{alertblock}{Redefinition}
-		$TSD1$ and $TSD2$ are \textbf{Signature Partner Bands} (In favor of Ultimate Cranker calculations, \textit{Jensen, 2004}).
+		$TSD1$ and $TSD2$ are \textbf{Signature Partner Bands} (in favor of Ultimate Cranker calculations, \textit{Jensen, 2004}).
 		\begin{align}
 			\left(\alpha_{fav}=+\frac{1}{2}\right): \{TSD1\}&\equiv\left\{\left[0^+,2^+,4^+,\dots\right] \otimes [j^\pi=13/2^+]\right\}\nonumber\\
 			\left(\alpha_{unfav}=-\frac{1}{2}\right): \{TSD2\}&\equiv\left\{\left[1^+,3^+,5^+,\dots\right] \otimes [j^\pi=13/2^+]\right\}\nonumber
@@ -724,10 +717,7 @@
 
 \begin{frame}
 	\frametitle{$\mathbf{W}_1$ | Numerical Results}
-	\begin{itemize}
-		\item Free parameters in the model $\rightarrow\mathcal{P}_\text{fit}=\left[\mathcal{I}_1,\mathcal{I}_2,\mathcal{I}_3,V,\gamma\right]$.
-		\item $V$: single-particle potential strength $\propto\beta_2$ (\textit{Tanabe, 2017})
-	\end{itemize}
+	Free parameters in the model $\rightarrow\mathcal{P}_\text{fit}=\left[\mathcal{I}_1,\mathcal{I}_2,\mathcal{I}_3,V,\gamma\right]$.
 	\begin{block}{Fitting procedure}
 		\vspace{-0.4cm}
 		\begin{align}
@@ -937,7 +927,7 @@
 		\centering
 		\includegraphics[width=0.49\textwidth]{figures/BE2inout-3.pdf}
 		\includegraphics[width=0.48\textwidth]{figures/BE2inout-4.pdf}
-		\caption{\textbf{Left}: E2 Branching ratio in $^{163}$Lu (TSD3). \textbf{Right}: The ratio $B(M1)/B(E2)_\text{in}$ for states $TSD2 \to TSD1$ (in units of $\mu_N^2/(\mathrm{e}^2b^2)$).}
+		\caption{\textbf{Left}: E2 Branching ratio in $^{167}$Lu (TSD2). \textbf{Right}: The ratio $B(M1)/B(E2)_\text{in}$ for states $TSD2 \to TSD1$ (in units of $\mu_N^2/(\mathrm{e}^2b^2)$).}
 	\end{figure}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
 		\centering
@@ -965,15 +955,15 @@
 
 \begin{frame}
 	\frametitle{Fresh-Up 2: $\mathbf{W}_2$}
-	\begin{block}{Novel description}
+	\begin{block}{Novel description of $^{163}$Lu}
 		\begin{itemize}
-			\item All four bands in $^{163}$Lu described by the same triaxial core + odd-particle coupling $\longrightarrow \mathcal{Q}_1=\pi^+(i_{13/2})$
-			\item The adopted wave-function admits states of both \textbf{positive and negative parity}.
+			\item All four bands in $^{163}$Lu described by the same triaxial core + odd-particle coupling $\longrightarrow \mathcal{Q}_1=\pi(i_{13/2})$
+			\item The adopted wave-function admits solutions of both \textbf{positive and negative parity}. Parity operator: $\mathcal{P}=\mathrm{e}^{-\iu\pi\mathbf{J}_2}C$:
 			\begin{align}
-				\bar{\Psi}=&p\Psi\nonumber\ ,\\
-				\bar{\Psi}(r,\varphi;f,\psi)=&\pm\Psi(r,\varphi;f,\psi)\nonumber
+				\mathcal{P}\Psi(r,\varphi;t,\psi)&=\Psi(r,\varphi+\pi;t,\psi+\pi)\nonumber\ ,\\
+				\mathcal{H}(r,\varphi+\pi;t,\psi+\pi)&=\mathcal{H}(r,\varphi;t,\psi)\nonumber\ ,\\
+				\Psi(r,\varphi+\pi;t,\psi+\pi)&=\pm\Psi(r,\varphi;t,\psi).\nonumber
 			\end{align}
-			\item $p$ eigenvalues of $\hat{P}_T=\hat{P}_\text{core}\otimes\hat{P}_\text{sp}$.
 		\end{itemize}
 	\end{block}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
@@ -1124,9 +1114,9 @@
 	\vspace{-0.5cm}
 	\begin{align}
 		\left. \mathcal{H}\ \right\vert_{p_0}&=I\left(I-\frac{1}{2}\right)\sin^2\theta\cdot \mathcal{A}_\varphi-2A_1Ij\sin\theta+{\color{red}T_\text{core}}+{\color{blue}T_\text{sp}}\ ,\nonumber\\
-		\mathcal{A}_\varphi&=A_1\cos^2\varphi+A_2\sin^2\varphi-A_3.\nonumber\\
+		\mathcal{A}_\varphi&=A_1\cos^2\varphi+A_2\sin^2\varphi-A_3\ ,\nonumber\\
 		{\color{red}T_\text{core}}&={\color{red}\frac{I}{2}(A_1+A_2)+A_3I^2}\ ,\nonumber\\
-		{\color{blue}T_\text{s.p.}}&={\color{blue}\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)}\nonumber
+		{\color{blue}T_\text{s.p.}}&={\color{blue}\frac{j}{2}(A_2+A_3)+A_1j^2-V\frac{2j-1}{j+1}\sin\left(\gamma+\frac{\pi}{6}\right)}\ .\nonumber
 	\end{align}
 \end{frame}
 
@@ -1235,7 +1225,7 @@
 		E&=\left(1-\frac{1}{2I}\right)A_1x_1^2+\left(1-\frac{1}{2I}\right)A_2x_2^2+\left[\left(1-\frac{1}{2I}\right)A_3+A_1\frac{j}{I}\right]x_3^2-\nonumber\\
 		&-I\left(I-\frac{1}{2}\right)A_3-2A_1Ij+{\color{red}T_\text{rot}}+{\color{blue}T_\text{sp}}.\nonumber
 	\end{align}
-	Energy surface: $E'=\frac{x_1^2}{s_1}+\frac{x_2^2}{s_2}+\frac{x_3^2}{s_3}$.
+	% Energy surface: $E'=\frac{x_1^2}{s_1}+\frac{x_2^2}{s_2}+\frac{x_3^2}{s_3}$.
 \end{frame}
 
 \begin{frame}
@@ -1320,7 +1310,7 @@
 	\frametitle{Rotational Hamiltonian}
 	\begin{exampleblock}{Rigid coupling Hamiltonian}
 		\begin{align}
-			{\color{red}H'}&=a_1\left(\hat{I}_+^2+\hat{I}_-^2\right)+a_2\left(\hat{I}_+\hat{I}_-+\hat{I}_-\hat{I}_+\right)+a_3\hat{I}_0\ ,\nonumber\\
+			{\color{red}H'}&=a_1\left(\hat{I}_+^2+\hat{I}_-^2\right)+a_2\left(\hat{I}_+\hat{I}_-+\hat{I}_-\hat{I}_+\right)+a_3\hat{I}_1\ ,\nonumber\\
 			{\color{blue}H_{sp}}&=\sum_{k=1}^2A_k\hat{j}_k^2\ ,\ {\color{magenta}\text{s.t.}}=A_1I^2-A_2j_2I\ .\nonumber
 		\end{align}
 	\end{exampleblock}
@@ -1337,7 +1327,7 @@
 	\begin{align}
 		\hat{I}_+&=\iu\frac{cb^\dagger-db^\dagger}{sb^\dagger}\left(I+Icb^\dagger db^\dagger-sb^\dagger b\right)\ ,\nonumber\\
 		\hat{I}_-&=\iu\frac{cb^\dagger+db^\dagger}{sb^\dagger}\left(I-Icb^\dagger db^\dagger+sb^\dagger b\right)\ ,\nonumber\\
-		\hat{I}_0&=Icb^\dagger db^\dagger-sb^\dagger b\ .\nonumber
+		\hat{I}_1&=Icb^\dagger db^\dagger-sb^\dagger b\ .\nonumber
 	\end{align}
 	\vspace{-0.9cm}
 	\begin{columns}
