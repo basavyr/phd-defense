@@ -99,8 +99,8 @@
     \end{block}
     \begin{exampleblock}{\faClipboard\ Objectives exclusive to the thesis}
         \begin{itemize}
-            \item Enough context towards a better understanding of the underlying concepts, methods, and results.
-            \item \faGithub\ create a completely \emph{open-source} project.
+            \item Sufficient context for a better understanding of the underlying concepts, methods, and results.
+            \item create a completely \emph{open-source} project \faGithub.
         \end{itemize}
     \end{exampleblock}
 \end{frame}
@@ -151,8 +151,8 @@
 	\frametitle{Axial shapes}
 	\vspace{-0.2cm}
 	\begin{itemize}
-		\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state \textit{(Budaca, 2018)}.
-		\item Moments of inertia: $\mathcal{I}_{1,2,3}$: two are equal, one is different.
+		\item Most of the nuclei are either \textbf{spherical} or \textbf{axially symmetric} in their ground-state. % \textit{(Budaca, 2018)}.
+		\item Nuclear moments of inertia $\mathcal{I}_{1,2,3}$: only two are equal.
 	\end{itemize}
 	\vspace{-0.4cm}
 	\begin{figure}
@@ -296,7 +296,7 @@
 		\begin{column}{0.6\textwidth}
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.45]{figures/wobbling_n_schematic-1.pdf}
+				\includegraphics[scale=0.45]{figures/wobbling_n_schematic.drawio.pdf}
 				\includegraphics[scale=0.48]{figures/wobblingFreq-evenA.pdf}
 			\end{figure}
 		\end{column}
@@ -994,7 +994,7 @@
 			\begin{align}
 				\mathcal{P}\Psi(r,\varphi;t,\psi)&=\Psi(r,\varphi+\pi;t,\psi+\pi)\nonumber\ ,\\
 				\mathcal{H}(r,\varphi+\pi;t,\psi+\pi)&=\mathcal{H}(r,\varphi;t,\psi)\nonumber\ ,\\
-				\Psi(r,\varphi+\pi;t,\psi+\pi)&=\pm\Psi(r,\varphi;t,\psi).\nonumber
+				{\color{red}\Psi(r,\varphi+\pi;t,\psi+\pi)}&={\color{red}\pm\Psi(r,\varphi;t,\psi)}.\nonumber
 			\end{align}
 		\end{itemize}
 	\end{block}
@@ -1009,9 +1009,9 @@
 	\vspace{-0.5cm}
 	\begin{align}
 		E_{I,0,0}^\text{TSD1}=&\epsilon_{13/2}+\mathcal{H}_\text{min}^I+\mathcal{F}_{00}^I\nonumber\ ,\ I^\pi=13/2^+,17/2^+,21/2^+\dots\ ,\\
-		E_{I,0,0}^\text{TSD2}=&{\color{red}\epsilon_{13/2}^1}+\mathcal{H}_\text{min}^I+\mathcal{F}_{00}^I\nonumber\ ,\ I^\pi=27/2^+,31/2^+,35/2^+\dots\ ,\\
+		E_{I,0,0}^\text{TSD2}=&\epsilon_{13/2}^1+\mathcal{H}_\text{min}^I+\mathcal{F}_{00}^I\nonumber\ ,\ I^\pi=27/2^+,31/2^+,35/2^+\dots\ ,\\
 		E_{I,1,0}^\text{TSD3}=&\epsilon_{13/2}+\mathcal{H}_\text{min}^{I-1}+\mathcal{F}_{10}^{I-1}\nonumber\ ,\ I^\pi=33/2^+,37/2^+,41/2^+\dots\ ,\\
-		E_{I,0,0}^\text{TSD4}=&{\color{blue}\epsilon_{13/2}^2}+\mathcal{H}_\text{min}^I+\mathcal{F}_{00}^I\ ,\ I^\pi=47/2^-,51/2^-,55/2^-\dots\nonumber.
+		E_{I,0,0}^\text{TSD4}=&\epsilon_{13/2}^2+\mathcal{H}_\text{min}^I+\mathcal{F}_{00}^I\ ,\ I^\pi=47/2^-,51/2^-,55/2^-\dots\nonumber.
 	\end{align}
 	\vspace{-1cm}
 	\begin{table}
@@ -1053,10 +1053,10 @@
 	\end{table}
 	\begin{exampleblock}{Remarks}
 		\begin{itemize}
-			\item $\gamma$ in agreement with exp. value ($\gamma_{exp}=20^\circ$) (\emph{Jensen, 2004})
-			\item Slight \emph{decrease} of $V$ (? breaking of parity symmetry quenches the quadrupole deformation)
-			\item overall $E_{RMS}\approx79$ keV: \textbf{first semi-classical description for a nucleus with deviations smaller than $100$ keV}.
-			% \item Signature and Parity corrections: $\epsilon_{13/2}^1=0.3$, $\epsilon_{13/2}^2=0.6$
+			\item \faPlus\ overall $E_{RMS}\approx79$ keV: \textbf{first semi-classical description for a nucleus with deviations smaller than $100$ keV}.
+			\item \faPlus\ $\gamma$ in agreement with exp. value ($\gamma_{exp}=20^\circ$, \emph{Jensen, 2004})
+			\item \faQuestion\ slight \emph{decrease} of $V$ (breaking of parity symmetry quenches the quadrupole deformation)
+			\item \faMinus\ $\mathbf{\epsilon_{13/2}^1}$ and $\mathbf{\epsilon_{13/2}^2}$ agree with microscopic calculations % ad-hoc corrections 
 		\end{itemize}
 	\end{exampleblock}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
@@ -1343,9 +1343,9 @@
 	\frametitle{New Boson Method for odd-mass nuclei}
 	\begin{exampleblock}{Rotational Hamiltonian}
 		\begin{align}
-			\hat{H}_\text{rot}&={\color{red}AH'}+{\color{blue}H_{sp}}+{\color{magenta}\text{s.t.}},\nonumber\\
+			\hat{H}_\text{rot}&={\color{red}AH'}+{\color{blue}H_{sp}}+{\color{magenta}H_\text{crank}},\nonumber\\
 			{\color{red}H'}&=a_1\left(\hat{I}_+^2+\hat{I}_-^2\right)+a_2\left(\hat{I}_+\hat{I}_-+\hat{I}_-\hat{I}_+\right)+a_3\hat{I}_1\ ,\nonumber\\
-			{\color{blue}H_{sp}}&=\sum_{k=1}^2A_k\hat{j}_k^2\ ,\ {\color{magenta}\text{s.t.}}=A_1I^2-A_2j_2I\ .\nonumber
+			{\color{blue}H_{sp}}&=\sum_{k=1}^2A_k\hat{j}_k^2\ ,\ {\color{magenta}H_\text{crank}}=A_1I^2-A_2j_2I\ .\nonumber
 		\end{align}
 	\end{exampleblock}
 	\begin{itemize}
@@ -1366,21 +1366,16 @@
 	\end{align}
 	\vspace{-0.9cm}
 	\begin{columns}
-		\begin{column}{0.5\textwidth}
+		\begin{column}{0.45\textwidth}
 			\begin{itemize}
-				\item $s,c,d$: Jacobi Elliptic Functions (Jacobi, 1829):
-				\vspace{-0.4cm}
-				\begin{align}
-					s&=\text{sn}(q,k)\ ,\ c=\text{cn}(q,k),\nonumber\\
-					d&=\text{dn}(q,k).\nonumber
-				\end{align}
-				\item boson operators $b,b^\dagger,[b,b^\dagger]=1$
+				\item $s\equiv sn,c\equiv cn,d\equiv dn$ : \textbf{Jacobi Elliptic Functions} (\textit{Jacobi, 1829})
+				\item boson operators:  $b,b^\dagger,[b,b^\dagger]=1$
 			\end{itemize}
 		\end{column}
-		\begin{column}{0.5\textwidth}
+		\begin{column}{0.55\textwidth}
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.53]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
+				\includegraphics[scale=0.55]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
 			\end{figure}
 		\end{column}
 	\end{columns}
@@ -1502,11 +1497,11 @@
 
 
 
-\begin{frame}[plain] % The optional argument 'plain' hides the headline and footline
+\begin{frame} % The optional argument 'plain' hides the headline and footline
 	\begin{center}
 		\bigskip\bigskip % Vertical whitespace
 		{\Huge Thank you for your attention \faHeart}
 	\end{center}
-\end{frame}
+\end{frame} 
 
 \end{document}
