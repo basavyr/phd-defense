@@ -62,6 +62,8 @@
 
 \date[\today]{\textit{A presentation for the degree of Doctor of Philosophy}\vspace{0.2cm} \\ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
 
+\setbeamertemplate{navigation symbols}{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% start of the document %%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -675,16 +677,14 @@
 	\end{table}
 	\begin{table}
 		\centering
-		\resizebox{\textwidth}{!}{%
-		\begin{tabular}{ccccccc}
+		\begin{tabular}{cccccc}
 		\hline
-		Bands & $n_{w_1}$ & $n_{w_2}$ & $\mathcal{F}_{n_{w_1}n_{w_2}}^I$ & $I_0$    & $I_t$    & $\mathcal{Q}$    \\ \hline \hline 
-		TSD1  & $0$       & $0$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $13/2^+$ & $97/2^+$ & $j^\pi=13/2^+\stackrel{not}{\equiv}\mathcal{Q}_1$ \\ \hline
-		TSD2  & $\mathbf{0}$       & $\mathbf{0}$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $27/2^+$ & $91/2^+$ & $j^\pi=13/2^+\stackrel{not}{\equiv}\mathcal{Q}_1$ \\ \hline
-		TSD3  & $1$       & $0$       & $\mathcal{F}_{10}^{I-1}=\frac{3}{2}\Omega_1^{I-1}+\frac{1}{2}\Omega_2^{I-1}$ & $33/2^+$ & $85/2^+$ & $j^\pi=13/2^+\stackrel{not}{\equiv}\mathcal{Q}_1$ \\ \hline
-		\textbf{TSD4}  & $\mathbf{0}$       & $\mathbf{0}$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $47/2^-$ & $83/2^-$ & $j^\pi=9/2^-\stackrel{not}{\equiv}\mathcal{Q}_2$  \\ \hline
-		\end{tabular}%
-		}
+		Bands & $n_{w_1}$ & $n_{w_2}$ & $\mathcal{F}_{n_{w_1}n_{w_2}}^I$ & $I_0$    & $I_t$  \\ \hline \hline 
+		TSD1  & $0$       & $0$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $13/2^+$ & $97/2^+$ \\ \hline
+		TSD2  & $\mathbf{0}$       & $\mathbf{0}$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $27/2^+$ & $91/2^+$ \\ \hline
+		TSD3  & $1$       & $0$       & $\mathcal{F}_{10}^{I-1}=\frac{3}{2}\Omega_1^{I-1}+\frac{1}{2}\Omega_2^{I-1}$ & $33/2^+$ & $85/2^+$  \\ \hline
+		\textbf{TSD4}  & $\mathbf{0}$       & $\mathbf{0}$       & $\mathcal{F}_{00}^I=\frac{1}{2}\left(\Omega_1^I+\Omega_2^I\right)$ & $47/2^-$ & $83/2^-$  \\ \hline
+		\end{tabular}
 	\end{table}
 	\vspace{-0.3cm}
 	\begin{beamercolorbox}[rounded=true,shadow=false, wd=\linewidth,]{block body}
@@ -1367,16 +1367,16 @@
 	\end{align}
 	\vspace{-0.9cm}
 	\begin{columns}
-		\begin{column}{0.45\textwidth}
+		\begin{column}{0.5\textwidth}
 			\begin{itemize}
-				\item $s\equiv sn,c\equiv cn,d\equiv dn$ : \textbf{Jacobi Elliptic Functions} (\textit{Jacobi, 1829})
-				\item boson operators:  $b,b^\dagger,[b,b^\dagger]=1$
+				\item $s,c,d$ : \textbf{Jacobi Elliptic Functions} (\textit{Jacobi, 1829})
+				\item $b,b^\dagger,[b,b^\dagger]=1$ : boson operators (\textit{Bargmann, 1962}) 
 			\end{itemize}
 		\end{column}
-		\begin{column}{0.55\textwidth}
+		\begin{column}{0.5\textwidth}
 			\begin{figure}
 				\centering
-				\includegraphics[scale=0.55]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
+				\includegraphics[scale=0.57]{figures/new-boson/Jacobi-Elliptic-Functions.pdf}
 			\end{figure}
 		\end{column}
 	\end{columns}
